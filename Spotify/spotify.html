@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left border">
+            <div class="close">
+                <img src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m1 p1">
+                <div class="logo invert"><img class="log" src="img/logo.svg"></div>
+                <ul>
+                    <li><img class="invert hl" src="img/home.svg">Home</li>
+                    <li><img class="invert search" src="img/search.svg">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m1 p1">
+                <div class="heading">
+                    <img class="invert" src="img/lib.svg">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songList">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+                    <div><a href="https://www.spotify.com/in-en/privacy/">Privacy Center</a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right border bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <img class="hamburger" src="img/hamburger.svg" alt="" srcset="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9.00005 6L15 12L9 18" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="16" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="signup">Sign up</button>
+                    <button class="login">Log in</button>
+                </div>
+            </div>
+            <div class="SP">
+                <h1>Spotify PlayList</h1>
+                <div class="CardContainer">
+
+                    <div data-folder="ncs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 24 32"
+                                style="background-color: #00ff00; border-radius: 50%;" fill="#00ff00">
+                                <polygon points="7,6,7,20 17,12" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002ec94bf1083be30463d4b731d">
+                        <h1>Chillhop</h1>
+                        <p>Hits to boost your mood and fil you with happiness!</p>
+                    </div>
+
+                    <div data-folder="cs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 24 32"
+                                style="background-color: #00ff00; border-radius: 50%;" fill="#00ff00">
+                                <polygon points="7,6,7,20 17,12" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002d2291e0c5d43a1b21a941031">
+                        <h1>Day Dreamer</h1>
+                        <p>Drift away with enthtralling instrumentals.</p>
+                    </div>
+
+                    <div data-folder="cs1" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 24 32"
+                                style="background-color: #00ff00; border-radius: 50%;" fill="#00ff00">
+                                <polygon points="7,6,7,20 17,12" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06">
+                        <h1>Sleep</h1>
+                        <p>Gentle ambient piano to help you fall asleep.</p>
+                    </div>
+
+                    <div data-folder="cs2" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 24 32"
+                                style="background-color: #00ff00; border-radius: 50%;" fill="#00ff00">
+                                <polygon points="7,6,7,20 17,12" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002af29338e415c87776e74a574">
+                        <h1>Today's Top Hits</h1>
+                        <p>Benson Boone is on top of the Hottest 50!</p>
+                    </div>
+
+                    <div data-folder="cs3" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 24 32"
+                                style="background-color: #00ff00; border-radius: 50%;" fill="#00ff00">
+                                <polygon points="7,6,7,20 17,12" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002d8fe1c03afc22a01d5109233">
+                        <h1>Calming Acoustic</h1>
+                        <p>Keep calm with instrumental acoustic</p>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="playbar">
+                        <div class="seekbar">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="above">
+                            <div class="songinfo">
+                            </div>
+                            <div class="songbtn">
+                                <img id="prev" src="img/previous.svg" alt="">
+                                <img id="play" src="img/play.svg" alt="">
+                                <img id="next" src="img/next.svg" alt="">
+                            </div>
+                            <div class="both">
+                                <div class="songtime">
+                                </div>
+                                <div class="volume">
+                                    <img width="25px" src="img/volume.svg" alt="" srcset="">
+                                    <div class="range">
+                                        <input type="range" name="vol">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="spotify.js"></script>
+</body>
+
+</html>

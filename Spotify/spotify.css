@@ -1,0 +1,382 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald&family=Poppins:wght@300&display=swap');
+
+
+:root{
+    --a:0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+.left{
+    width: 25vw;
+    padding: 10px;
+}
+.right{
+    width: 75vw;
+    position: relative;
+}
+.home{
+    padding: 10px;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.home ul li{
+    padding-top: 14px;
+    display: flex;
+    gap: 15px;
+    width: 14px;
+    list-style: none;
+    font-weight: bold;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-grey{
+    background-color: rgb(25, 24, 24);
+}
+.p1{
+    padding: 10px;
+}
+.heading{
+    padding-top: 14px;
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+.heading img{
+    width: 28px;
+}
+.hl{
+    size: 12px;
+}
+.footer{
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    gap: 14px;
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+}
+.logo .hm .search{
+    padding: 10px;
+}
+.log{
+    width: 110px;
+}
+.footer a{
+    color: grey;
+}
+.library{
+    min-height: 80vh;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header > *{
+    padding: 15px;
+}
+.right{
+    margin: 16px 0px;
+}
+.header{
+    background-color: rgb(9, 9, 9);
+}
+.SP{
+    padding: 10px;
+    overflow: auto;
+}
+.card{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.SP .card{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(33, 33, 33);
+    overflow: auto;
+}
+.CardContainer{
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 70vh;
+}
+.card > *{
+    padding-top: 10px;
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: #373837;
+    --a:1;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.card{
+    position: relative;
+}
+.play{
+    position: absolute;
+    top: 176px;
+    left: 168px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+}
+.buttons > *{
+    margin: 0 12px;
+}
+
+.songinfo{
+    width: 250px;
+}
+
+.signup{
+    background-color:rgb(9, 9, 9);
+    font-weight: bold;
+    color: rgb(120, 118, 118);
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.signup:hover{
+    font-size: 1.01rem;
+    color: white;
+}
+.login{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    padding: 16px;
+    border-radius: 35px;
+    width: 100px;
+    cursor: pointer;
+}
+.login:hover{
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+    background-color: rgb(218, 212, 212);
+    padding: 16px;
+    border-radius: 35px;
+    width: 101px;
+    cursor: pointer;
+}
+
+.playbar{
+    position: fixed;
+    bottom: 30px;
+    background-color:#046004;
+    width: 70vw;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px green;
+    min-height: 35px;
+}
+
+.songbtn{
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+}
+
+.songList ul{
+    padding: 0 30px;
+    display: flex;
+}
+
+.songList{
+    height: 544px;
+    overflow: auto;
+    margin-bottom: 44px;
+}
+
+.songList ul li{
+    list-style-type: decimal;
+    display: flex;
+    gap: 7px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin: 7px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 275px;
+}
+
+.playnow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playnow span{
+    font-size: 15px;
+    padding: 12px;
+}
+
+.seekbar{
+    height: 5px;
+    width: 98%;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.circle{
+    background-color: rgb(61, 59, 59);
+    border: 1px solid black;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 200px;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.5s;
+}
+
+.songbtn img{
+    cursor: pointer;
+}
+
+.above{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+.hambuger{
+    display: none;
+}
+
+.left .close{
+    display: none;
+}
+
+.both{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.range input{
+    cursor: pointer;
+}
+
+/* .info div{
+    word-break: break-all;
+} */
+
+@media (max-width: 1250px){
+    .left{
+        position: absolute;
+        left: -120%;
+        transition: all 0.5s;
+        z-index: 1;
+        width: 333px;
+        background-color: black;
+        padding: 0;
+    }
+    .left .close{
+        position: absolute;
+        left: 285px;
+        top: 28px;
+        width: 41px;
+        display: block;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .both{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .songinfo,.songtime{
+        width: auto;
+    }
+
+    .right{
+        width: 100vw;
+        margin: 0;
+    }
+    .playbar{
+        width: 88vw;
+    }
+    .seekbar{
+        width: 90%;
+    }
+    .hambuger{
+        display: block;
+    }
+    .card{
+        width: 100vw;
+    }
+    .CardContainer{
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .above{
+        flex-direction: column;
+        gap: 23px;
+        align-items: center;
+    }
+
+}
+
+/* Set the color for the track (the area the thumb moves along) */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #333;
+  }
+  
+  /* Set the color for the thumb (the draggable handle) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 6px;
+  }
+  
+  /* Optional: Hover effect on the thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+  }
+  
