@@ -1,40 +1,43 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald&family=Poppins:wght@300&display=swap');
 
 
-:root{
-    --a:0;
+:root {
+    --a: 0;
 }
-body{
+
+body {
     background-color: black;
     color: white;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
-.left{
+
+.left {
     width: 25vw;
     padding: 10px;
 }
-.right{
+
+.right {
     width: 75vw;
     position: relative;
 }
-.home{
+
+.home {
     padding: 10px;
 }
 
-.bg-black{
+.bg-black {
     background-color: black;
     color: white;
 }
 
-.home ul li{
+.home ul li {
     padding-top: 14px;
     display: flex;
     gap: 15px;
@@ -42,16 +45,20 @@ body{
     list-style: none;
     font-weight: bold;
 }
-.invert{
+
+.invert {
     filter: invert(1);
 }
-.bg-grey{
+
+.bg-grey {
     background-color: rgb(25, 24, 24);
 }
-.p1{
+
+.p1 {
     padding: 10px;
 }
-.heading{
+
+.heading {
     padding-top: 14px;
     display: flex;
     gap: 15px;
@@ -59,13 +66,16 @@ body{
     font-weight: bold;
     font-size: 14px;
 }
-.heading img{
+
+.heading img {
     width: 28px;
 }
-.hl{
+
+.hl {
     size: 12px;
 }
-.footer{
+
+.footer {
     display: flex;
     font-size: 10px;
     color: grey;
@@ -74,48 +84,60 @@ body{
     padding: 10px;
     bottom: 0;
 }
-.logo .hm .search{
+
+.logo .hm .search {
     padding: 10px;
 }
-.log{
+
+.log {
     width: 110px;
 }
-.footer a{
+
+.footer a {
     color: grey;
 }
-.library{
+
+.library {
     min-height: 80vh;
     position: relative;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
 }
-.header > *{
+
+.header>* {
     padding: 15px;
 }
-.right{
+
+.right {
     margin: 16px 0px;
 }
-.header{
+
+.header {
     background-color: rgb(9, 9, 9);
 }
-.SP{
+
+.SP {
     padding: 10px;
     overflow: auto;
 }
-.card{
+
+.card {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
 }
-.SP .card{
+
+.SP .card {
     width: 200px;
     padding: 10px;
     border-radius: 5px;
     background-color: rgb(33, 33, 33);
     overflow: auto;
 }
-.CardContainer{
+
+.CardContainer {
     display: flex;
     gap: 30px;
     margin: 30px;
@@ -123,40 +145,44 @@ body{
     overflow-y: auto;
     max-height: 70vh;
 }
-.card > *{
+
+.card>* {
     padding-top: 10px;
 }
 
-.card:hover{
+.card:hover {
     cursor: pointer;
     background-color: #373837;
-    --a:1;
+    --a: 1;
 }
 
-.card img{
+.card img {
     width: 100%;
     object-fit: contain;
 }
-.card{
+
+.card {
     position: relative;
 }
-.play{
+
+.play {
     position: absolute;
     top: 176px;
     left: 168px;
     opacity: var(--a);
     transition: all 1s ease-out;
 }
-.buttons > *{
+
+.buttons>* {
     margin: 0 12px;
 }
 
-.songinfo{
+.songinfo {
     width: 250px;
 }
 
-.signup{
-    background-color:rgb(9, 9, 9);
+.signup {
+    background-color: rgb(9, 9, 9);
     font-weight: bold;
     color: rgb(120, 118, 118);
     font-size: 15px;
@@ -165,11 +191,12 @@ body{
     outline: none;
 }
 
-.signup:hover{
+.signup:hover {
     font-size: 1.01rem;
     color: white;
 }
-.login{
+
+.login {
     font-size: 15px;
     font-weight: bold;
     color: black;
@@ -179,7 +206,8 @@ body{
     width: 100px;
     cursor: pointer;
 }
-.login:hover{
+
+.login:hover {
     font-size: 15px;
     font-weight: bolder;
     color: black;
@@ -190,10 +218,10 @@ body{
     cursor: pointer;
 }
 
-.playbar{
+.playbar {
     position: fixed;
     bottom: 30px;
-    background-color:#046004;
+    background-color: #046004;
     width: 70vw;
     padding: 12px;
     border-radius: 20px;
@@ -201,24 +229,24 @@ body{
     min-height: 35px;
 }
 
-.songbtn{
+.songbtn {
     display: flex;
     justify-content: center;
     gap: 46px;
 }
 
-.songList ul{
+.songList ul {
     padding: 0 30px;
     display: flex;
 }
 
-.songList{
+.songList {
     height: 544px;
     overflow: auto;
     margin-bottom: 44px;
 }
 
-.songList ul li{
+.songList ul li {
     list-style-type: decimal;
     display: flex;
     gap: 7px;
@@ -230,18 +258,18 @@ body{
     width: 275px;
 }
 
-.playnow{
+.playnow {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.playnow span{
+.playnow span {
     font-size: 15px;
     padding: 12px;
 }
 
-.seekbar{
+.seekbar {
     height: 5px;
     width: 98%;
     border-radius: 15px;
@@ -251,7 +279,7 @@ body{
     cursor: pointer;
 }
 
-.circle{
+.circle {
     background-color: rgb(61, 59, 59);
     border: 1px solid black;
     position: relative;
@@ -263,38 +291,39 @@ body{
     transition: left 0.5s;
 }
 
-.songbtn img{
+.songbtn img {
     cursor: pointer;
 }
 
-.above{
+.above {
     display: flex;
     justify-content: space-between;
     padding: 0 12px;
 }
-.hambuger{
+
+.hambuger {
     display: none;
 }
 
-.left .close{
+.left .close {
     display: none;
 }
 
-.both{
+.both {
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
 
-.volume{
+.volume {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-.range input{
+.range input {
     cursor: pointer;
 }
 
@@ -302,8 +331,8 @@ body{
     word-break: break-all;
 } */
 
-@media (max-width: 1250px){
-    .left{
+@media (max-width: 1250px) {
+    .left {
         position: absolute;
         left: -120%;
         transition: all 0.5s;
@@ -312,7 +341,8 @@ body{
         background-color: black;
         padding: 0;
     }
-    .left .close{
+
+    .left .close {
         position: absolute;
         left: 285px;
         top: 28px;
@@ -322,37 +352,44 @@ body{
         z-index: 3;
     }
 
-    .both{
+    .both {
         display: flex;
         flex-direction: column;
     }
 
-    .songinfo,.songtime{
+    .songinfo,
+    .songtime {
         width: auto;
     }
 
-    .right{
+    .right {
         width: 100vw;
         margin: 0;
     }
-    .playbar{
+
+    .playbar {
         width: 88vw;
     }
-    .seekbar{
+
+    .seekbar {
         width: 90%;
     }
-    .hambuger{
+
+    .hambuger {
         display: block;
     }
-    .card{
+
+    .card {
         width: 100vw;
     }
-    .CardContainer{
+
+    .CardContainer {
         margin: 0;
         align-items: center;
         justify-content: center;
     }
-    .above{
+
+    .above {
         flex-direction: column;
         gap: 23px;
         align-items: center;
@@ -360,23 +397,19 @@ body{
 
 }
 
-/* Set the color for the track (the area the thumb moves along) */
 ::-webkit-scrollbar {
     width: 12px;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background-color: #333;
-  }
-  
-  /* Set the color for the thumb (the draggable handle) */
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: #555;
     border-radius: 6px;
-  }
-  
-  /* Optional: Hover effect on the thumb */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+::-webkit-scrollbar-thumb:hover {
     background-color: #777;
-  }
-  
+}
